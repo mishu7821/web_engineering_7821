@@ -184,15 +184,4 @@ function quizQuestion() {
 	}
 	document.getElementById('result').innerHTML = "You answered "+i+" out of 5 questions correctly ("+(i/5*100)+"%.)"
 	
-	
-	//alert(selectedOption)
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
