@@ -127,46 +127,7 @@ switch (b)
 document.getElementById("answer").value=result;
 }
 
-function convert() {
-    var amount = document.getElementsByName("amount1")[0].value;
-    var dollar = Number(amount) * 0.012;
-	var euro = Number(amount) * 0.011;
-	var pound = Number(amount) * 0.0091;
-	
-	var value = 0
-	var x = document.getElementById("currency").selectedIndex;
-	var y = document.getElementById("currency1").selectedIndex;
-	if (x == 0  && y == 1) {
-		value = Number(amount) * 0.012;
-	}else if (x == 0 && y == 2) {
-		value = Number(amount) * 0.011;
-	}else if (x == 0  && y == 3) {
-		value = Number(amount) * 0.0091;
-	}else if (x == 1 && y == 0) {
-		value = Number(amount) * 84.67;
-	}else if (x == 1 && y == 2) {
-		value = Number(amount) * 0.9;
-	}else if (x == 1 && y == 3) {
-		value = Number(amount) * 0.78;
-	}else if (x == 2 && y == 0) {
-		value = Number(amount) * 93.93;
-	}else if (x == 2 && y == 1) {
-		value = Number(amount) * 1.11;
-	}else if (x == 2 && y == 3) {
-		value = Number(amount) * 0.86;
-	}else if (x == 3 && y == 0) {
-		value = Number(amount) * 109;
-	}else if (x == 3 && y == 1) {
-		value = Number(amount) * 1.29;
-	}else if (x == 3 && y == 2) {
-		value = Number(amount) * 1.16;
-	}else {
-		value = Number(amount);
-	}
-	
-    document.getElementsByName("amount2")[0].value = value;
-	
-}
+
 function fortune() {
 	 var textArray = ['Courage is the discovery that you may not win, and trying when you know you can lose.',
 	 'The greatest barrier to success is the fear of failure.',
