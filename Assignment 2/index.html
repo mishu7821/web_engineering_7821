@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Assignment-2</title>
+		<style> 
+            body{
+                margin:auto;
+            }
+        </style>
+        
+	</head>
+	<body onload="fortune()">
+		<center><h2 style="color: green">Fortune Generator</h2></center>
+		<center><p  id="fortune" style="color:#0F5E63"></p></center>
+		
+		<center><h2 style="color:green">Currency Converter</h2></center>
+		
+		<center>
+			Enter Your Currency Amount:<br>
+			<input type="number" id="a" placeholder="00.00">
+			<br><br>
+			Select Your Currency Country:<br><select id="selec">
+			<option value="0">-------</option>
+			<option value="1">American USD</option>
+			<option value="2">Bangadeshi Taka</option>
+			<option value="3">Indian Rupee</option>
+			<option value="4">Japanese Yean</option>
+			<option value="5">Franch Euro</option>
+			</select><br><br>
+			Chose The Converter Country:<br><select id="selec2">
+			<option value="0">-------</option>
+			<option value="1">American USD</option>
+			<option value="2">Bangadeshi Taka</option>
+			<option value="3">Indian Rupee</option>
+			<option value="4">Japanese Yean</option>
+			<option value="5">Franch Euro</option></select><br><br>
+			          <input type="button" onclick="check()" value="Convert"></button>
+			    <br>The Converted Amount is:<br>
+			    <br>
+			<input type="number" id="answer" placeholder="00.00">
+		</center>
+		<center>
+			<h2 style="color: green">Quiz</h2>
+			<form action="/action_page.php">
+			<p>1.What is the capital of Missouri?</p>
+			  <input type="radio" name="1" value="a">A. Dhaka<br>
+			  <input type="radio" name="1" value="b">B. Hongkong<br>
+			  <input type="radio" name="1" value="c">C. Jefferson City<br>  
+			<p id="ans1" style="color: green"></p>
+			<p>2.How many ounces in a pound?</p>
+			  <input type="radio" name="2" value="a"> A. 20<br>
+			  <input type="radio" name="2" value="b"> B. 10<br>
+			  <input type="radio" name="2" value="c"> C. 16<br>  
+			  <p id="ans2" style="color: green"></p>
+			<p>3.Who was the first person to set foot on the moon?</p>
+				 <input type="radio" name="3" value="a">A. Adam Markoni<br>
+				 <input type="radio" name="3" value="b">B. Neil Armostrong<br>
+				 <input type="radio" name="3" value="c">C. Abraham Lobert<br>  
+				<p id="ans3" style="color: green"></p>
+			<p>4.Who holds the Major League Baseball record for most home runs in a season?</p>
+				<input type="radio" name="4" value="a"> A. Barry Bonds<br>
+				<input type="radio" name="4" value="b"> B. Hinguistain<br>
+				<input type="radio" name="4" value="c"> C. Alekgendar Mcwell/s<br>  
+				<p id="ans4" style="color: green"></p>
+			<p>5.In what year was University of Liverpool founded?</p>
+				 <input type="radio" name="5" value="a">A. 1881<br>
+				 <input type="radio" name="5" value="b">B. 1981<br>
+				 <input type="radio" name="5" value="c">C. 1905<br>  
+				<p id="ans5" style="color: green"></p>
+			<h3 style="color:blue" id="result"></h3>
+			  <input type="button" value="Submit" onclick="quizQuestion()" />
+		</form>
+		</center>
+
+		<script src="./script/script.js" ></script>
+	</body>
+</html>
